@@ -1,0 +1,124 @@
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.project-list__title {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+}
+.project-list__el__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: url(https://i.ibb.co/L8KRk2Q/Group-62.png) center center;
+}
+
+.project-list__element {
+  display: flex;
+  align-items: center;
+}
+
+.project-list__title {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  opacity: 0.7;
+  color: #000000;
+}
+
+.project-list__progress-text {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  opacity: 0.6;
+
+  color: #000000;
+}
+
+.progres-list__progress {
+  display: flex;
+  align-items: center;
+  //justify-content: space-evenly;
+}
+
+.project-list__percent {
+  margin-left: 15px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+  opacity: 0.7;
+}
+
+.horizontal {
+  //display: inline-block;
+  width: 200px;
+  height: 20px;
+  //-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+  //transform: rotate(-90deg);
+  background: rgba(0, 0,0, .1);
+}
+.vertical {
+  box-shadow: inset 0px 4px 6px #ccc;
+}
+.progress-bar {
+  box-shadow: inset 0px 4px 6px rgba(100,100,100,0.6);
+}
+
+@media screen and (max-width: 968px) {
+
+  .project-list__element {
+    flex-direction: column;
+  }
+
+  .project-list__message {
+    order: 2;
+  }
+
+  .project-list__image {
+    //max-width: 500px;
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-list {
+    padding: 25px;
+
+  }
+
+  .project-list__element {
+    flex-direction: column;
+  }
+
+  .project-list__message {
+    order: 2;
+  }
+
+  .project-list__image {
+    img {
+      max-width: 300px;
+
+    }
+    order: 1;
+  }
+}
+

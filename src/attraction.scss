@@ -1,0 +1,121 @@
+.attraction {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://i.ibb.co/L8KRk2Q/Group-62.png");
+
+  .attraction__element__wrapper {
+    display: flex;
+  }
+
+  .attraction__title {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 41px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .attraction__element__border {
+    min-width: 8px;
+    height: auto;
+    background-color: #221131;
+    border-radius: 4px;
+  }
+
+  .attraction__element {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+
+    .attraction__photo {
+      height: 200px;
+    }
+
+    .attraction__message {
+      padding: 22px;
+    }
+
+    .attraction__main-title {
+      font-family: PT Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 31px;
+      /* identical to box height */
+      color: #000000;
+      margin-bottom: 25px;
+    }
+
+    .attraction__subtitle {
+      font-family: PT Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+
+      color: #000000;
+    }
+  }
+
+  @media screen and (max-width: 968px) {
+    .attraction__element {
+      flex-direction: column-reverse;
+
+      img {
+        max-width: 500px;
+      }
+    }
+
+    .attraction__message {
+      order: 2;
+    }
+
+    .attraction__photo {
+      order: 1;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .attraction__element {
+      flex-direction: column-reverse;
+
+      img {
+        max-width: 350px;
+      }
+    }
+
+    .attraction__message {
+      order: 2;
+    }
+
+    .attraction__photo {
+      order: 1;
+    }
+  }
+
+  @media screen and (max-width: 568px) {
+    .attraction {
+      .attraction__element {
+        flex-direction: column-reverse;
+        img {
+          max-width: 300px;
+        }
+      }
+
+      .attraction__message {
+        order: 2;
+      }
+
+      .attraction__photo {
+        order: 1;
+      }
+    }
+  }
+}
