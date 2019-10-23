@@ -10,4 +10,3 @@ import './account_payment.scss';
 import './footer.scss';
 import './main.scss';
 import './header.scss';
-
